@@ -18,7 +18,8 @@ def watchFile(logg):
 
 if __name__ == "__main__":
     home = expanduser("~")
-    eveLogPathPost = join('Documents', 'EVE', 'logs', 'Gamelogs')
+    #eveLogPathPost = join('Documents', 'EVE', 'logs', 'Gamelogs')
+    eveLogPathPost = join('Library', 'Preferences', 'EVE Online Preferences', 'p_drive', 'My Documents', 'EVE')
     eveLogs = join(home, eveLogPathPost)
     files = sorted([f for f in listdir(eveLogs)])
     newest = files[-1]
